@@ -28,7 +28,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="285" height="40"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="go"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
                                         <connections>
                                             <outlet property="delegate" destination="iU5-Iq-d2S" id="JVy-kz-VUW"/>
                                         </connections>
@@ -55,25 +55,25 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gbv-Zk-Ws0">
-                                <rect key="frame" x="15" y="145" width="345" height="200"/>
+                                <rect key="frame" x="50" y="145" width="275" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6J-UJ-tQa">
-                                        <rect key="frame" x="0.0" y="0.0" width="345" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.025930069390000001" green="0.40115237240000001" blue="0.96789389849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peh-rD-Qin">
-                                        <rect key="frame" x="0.0" y="0.0" width="345" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EZB-Ef-rLp">
-                                        <rect key="frame" x="0.0" y="0.0" width="345" height="128"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EZB-Ef-rLp">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="128"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHE-Pd-lDq">
-                                        <rect key="frame" x="0.0" y="128" width="345" height="72"/>
+                                        <rect key="frame" x="0.0" y="128" width="275" height="72"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -87,11 +87,11 @@
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Xq9-O6-87G" secondAttribute="trailing" constant="15" id="8oa-yw-2Tc"/>
-                            <constraint firstItem="Gbv-Zk-Ws0" firstAttribute="leading" secondItem="2NE-K7-eCP" secondAttribute="leading" constant="15" id="Nfz-LA-9Cc"/>
+                            <constraint firstItem="Gbv-Zk-Ws0" firstAttribute="leading" secondItem="2NE-K7-eCP" secondAttribute="leading" constant="50" id="Nfz-LA-9Cc"/>
                             <constraint firstItem="Gbv-Zk-Ws0" firstAttribute="top" secondItem="Xq9-O6-87G" secondAttribute="bottom" constant="45" id="eie-a9-onI"/>
                             <constraint firstItem="Xq9-O6-87G" firstAttribute="top" secondItem="2NE-K7-eCP" secondAttribute="top" constant="60" id="giR-kp-Y7B"/>
                             <constraint firstItem="Xq9-O6-87G" firstAttribute="leading" secondItem="2NE-K7-eCP" secondAttribute="leading" constant="15" id="ncu-O2-u4M"/>
-                            <constraint firstAttribute="trailing" secondItem="Gbv-Zk-Ws0" secondAttribute="trailing" constant="15" id="vAr-Zt-Xd2"/>
+                            <constraint firstAttribute="trailing" secondItem="Gbv-Zk-Ws0" secondAttribute="trailing" constant="50" id="vAr-Zt-Xd2"/>
                         </constraints>
                     </view>
                     <connections>

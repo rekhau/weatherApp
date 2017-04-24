@@ -79,8 +79,11 @@ class MainViewController: UIViewController {
                 
             }
             else {
-                self.initializeUIComponents()
-                self.showAlert()
+                DispatchQueue.main.async { [weak self] in
+                    self?.initializeUIComponents()
+                    self?.showAlert()
+                }
+                
             }
             
         })
@@ -107,6 +110,9 @@ class MainViewController: UIViewController {
         cityName.text = "- - "
         currentTemp.text = "- -"
         minMaxTemp.text = "- -/- - "
+        searchTextField.text = ""
+        weatherImageView.image = UIImage()
+        searchButton.isEnabled = false
     }
     
     func showAlert() {

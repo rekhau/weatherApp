@@ -26,7 +26,7 @@ struct CityModel {
     
     static func convertJSONToObject(jsonObject:[String:AnyObject]) -> CityModel? {
         guard let resultsDict = jsonObject["main"] ,
-            let weather = jsonObject["weather"] ,
+            let weather = jsonObject["weather"] as? NSArray,
             let cityName = jsonObject["name"]
             
             else {
