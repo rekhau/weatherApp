@@ -6,14 +6,27 @@
 //  Copyright © 2017 Rekha Bisht. All rights reserved.
 //
 
+import UIKit
 import XCTest
 @testable import OpenWeatherApp
 
 class OpenWeatherAppTests: XCTestCase {
-    
+    var mainController:MainViewController!
+
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        mainController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainViewControllerStoryboard") as! MainViewController
+    }
+    
+    //Should be disabled when there is no text in the text field
+    func testGoButton() {
+        let _ = mainController.view
+        mainController.searchTextField.text = ""
+        mainController.toggleSearchButton()
+        
+        XCTAssertFalse(mainController.searchButton.isEnabled, "Go Button should be disabled")
+        
+        
     }
     
     override func tearDown() {
@@ -21,16 +34,5 @@ class OpenWeatherAppTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
 }
