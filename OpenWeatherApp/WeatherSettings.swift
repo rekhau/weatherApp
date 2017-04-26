@@ -1,5 +1,5 @@
 //
-//  AppSettings.swift
+//  WeatherSettings.swift
 //  OpenWeatherApp
 //
 //  Created by Rekha Bisht on 4/23/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct AppSettings {
+struct WeatherSettings {
     
     static var APIKey : String {
         return "0ca33bade60e05d803afd13697cee031"

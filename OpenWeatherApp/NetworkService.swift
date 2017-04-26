@@ -33,7 +33,7 @@ class NetworkService {
     
     //Method to download the weather data
     class func downloadData(forCity: String , handler:@escaping completionHandler) -> Void {
-        let urlString = AppSettings.baseURL + forCity + "&APPID=" + AppSettings.APIKey
+        let urlString = WeatherSettings.baseURL + forCity + "&APPID=" + WeatherSettings.APIKey
         let escapedURL = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         let request = URLRequest(url: URL(string: escapedURL!)!)
         
@@ -76,7 +76,7 @@ class NetworkService {
     
     
     class func downloadWeatherImage(forWeatherType: String,handler:@escaping dataHandler) -> Void {
-        let urlString = AppSettings.imageURL + forWeatherType + ".png"
+        let urlString = WeatherSettings.imageURL + forWeatherType + ".png"
         let url = URL(string: urlString)
         
         var request = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 60)

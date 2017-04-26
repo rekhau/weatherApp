@@ -15,8 +15,8 @@
 		CF8EA46E1EAD78A600EE0991 /* OpenWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8EA46D1EAD78A600EE0991 /* OpenWeatherAppUITests.swift */; };
 		CF8EA47F1EAD8AA000EE0991 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8EA47E1EAD8AA000EE0991 /* NetworkService.swift */; };
 		CF8EA4811EAD8AC400EE0991 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8EA4801EAD8AC400EE0991 /* MainViewController.swift */; };
-		CF8EA4841EAD8AEF00EE0991 /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8EA4831EAD8AEF00EE0991 /* AppExtensions.swift */; };
-		CF8EA4861EAD8B0400EE0991 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8EA4851EAD8B0400EE0991 /* AppSettings.swift */; };
+		CF8EA4841EAD8AEF00EE0991 /* WeatherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8EA4831EAD8AEF00EE0991 /* WeatherExtensions.swift */; };
+		CF8EA4861EAD8B0400EE0991 /* WeatherSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8EA4851EAD8B0400EE0991 /* WeatherSettings.swift */; };
 		CF8EA4881EAD8B1E00EE0991 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8EA4871EAD8B1E00EE0991 /* CityModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +52,8 @@
 		CF8EA46F1EAD78A600EE0991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF8EA47E1EAD8AA000EE0991 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CF8EA4801EAD8AC400EE0991 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		CF8EA4831EAD8AEF00EE0991 /* AppExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
-		CF8EA4851EAD8B0400EE0991 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		CF8EA4831EAD8AEF00EE0991 /* WeatherExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherExtensions.swift; sourceTree = "<group>"; };
+		CF8EA4851EAD8B0400EE0991 /* WeatherSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherSettings.swift; sourceTree = "<group>"; };
 		CF8EA4871EAD8B1E00EE0991 /* CityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,8 +163,8 @@
 			children = (
 				CF8EA4591EAD78A600EE0991 /* Info.plist */,
 				CF8EA44D1EAD78A600EE0991 /* AppDelegate.swift */,
-				CF8EA4831EAD8AEF00EE0991 /* AppExtensions.swift */,
-				CF8EA4851EAD8B0400EE0991 /* AppSettings.swift */,
+				CF8EA4831EAD8AEF00EE0991 /* WeatherExtensions.swift */,
+				CF8EA4851EAD8B0400EE0991 /* WeatherSettings.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -306,8 +306,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF8EA4841EAD8AEF00EE0991 /* AppExtensions.swift in Sources */,
-				CF8EA4861EAD8B0400EE0991 /* AppSettings.swift in Sources */,
+				CF8EA4841EAD8AEF00EE0991 /* WeatherExtensions.swift in Sources */,
+				CF8EA4861EAD8B0400EE0991 /* WeatherSettings.swift in Sources */,
 				CF8EA47F1EAD8AA000EE0991 /* NetworkService.swift in Sources */,
 				CF8EA44E1EAD78A600EE0991 /* AppDelegate.swift in Sources */,
 				CF8EA4811EAD8AC400EE0991 /* MainViewController.swift in Sources */,
@@ -562,6 +562,7 @@
 				CF8EA4741EAD78A600EE0991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF8EA4751EAD78A600EE0991 /* Build configuration list for PBXNativeTarget "OpenWeatherAppTests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +571,7 @@
 				CF8EA4771EAD78A600EE0991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF8EA4781EAD78A600EE0991 /* Build configuration list for PBXNativeTarget "OpenWeatherAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +580,7 @@
 				CF8EA47A1EAD78A600EE0991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

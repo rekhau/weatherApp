@@ -1,5 +1,5 @@
 //
-//  AppExtensions.swift
+//  WeatherExtensions.swift
 //  OpenWeatherApp
 //
 //  Created by Rekha Bisht on 4/23/17.
