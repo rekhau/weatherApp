@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WeatherConnection
 
 class MainViewController: UIViewController {
     @IBOutlet weak var searchTextField:UITextField!
@@ -34,9 +35,9 @@ class MainViewController: UIViewController {
         searchTextField.becomeFirstResponder()
         
         //Check if in the user defaults there exists any city ; if yes refresh the weather data
-        if !WeatherSettings.lastCitySearched.isEmpty {
-            searchTextField.text = WeatherSettings.lastCitySearched
-            city = WeatherSettings.lastCitySearched
+        if !AppSettings.lastCitySearched.isEmpty {
+            searchTextField.text = AppSettings.lastCitySearched
+            city = AppSettings.lastCitySearched
             callWeatherService()
         }
         else {
@@ -59,7 +60,7 @@ class MainViewController: UIViewController {
                     self?.cityName.text = data?.cityName
                     self?.currentTemp.text = data?.currentTemp
                     self?.minMaxTemp.text = (data?.minTemp)! + "/" + (data?.maxTemp)!
-                    WeatherSettings.lastCitySearched = (data?.cityName)!
+                    AppSettings.lastCitySearched = (data?.cityName)!
                     
                 }
                 //Call the image URL in the background

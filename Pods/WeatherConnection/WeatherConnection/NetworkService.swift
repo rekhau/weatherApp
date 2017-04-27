@@ -8,12 +8,12 @@
 
 import UIKit
 
-class NetworkService {
-    typealias dataHandler = (Data?,NSError?) -> Void
-    typealias completionHandler = (CityModel?,NSError?) -> Void
+public class NetworkService {
+    public typealias dataHandler = (Data?,NSError?) -> Void
+    public typealias completionHandler = (CityModel?,NSError?) -> Void
     
     
-    private struct Locals {
+    fileprivate struct Locals {
         static var manager: URLSession?
     }
     
@@ -32,7 +32,7 @@ class NetworkService {
     
     
     //Method to download the weather data
-    class func downloadData(forCity: String , handler:@escaping completionHandler) -> Void {
+    public class func downloadData(forCity: String , handler:@escaping completionHandler) -> Void {
         let urlString = WeatherSettings.baseURL + forCity + "&APPID=" + WeatherSettings.APIKey
         let escapedURL = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         let request = URLRequest(url: URL(string: escapedURL!)!)
@@ -75,7 +75,7 @@ class NetworkService {
     
     
     
-    class func downloadWeatherImage(forWeatherType: String,handler:@escaping dataHandler) -> Void {
+    public class func downloadWeatherImage(forWeatherType: String,handler:@escaping dataHandler) -> Void {
         let urlString = WeatherSettings.imageURL + forWeatherType + ".png"
         let url = URL(string: urlString)
         

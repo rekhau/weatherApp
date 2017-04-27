@@ -1,0 +1,22 @@
+PODS:
+  - WeatherConnection (1.0.0)
+
+DEPENDENCIES:
+  - WeatherConnection (from `https://github.com/rekhau/WeatherConnection`, tag `1.0.0`)
+
+EXTERNAL SOURCES:
+  WeatherConnection:
+    :git: https://github.com/rekhau/WeatherConnection
+    :tag: 1.0.0
+
+CHECKOUT OPTIONS:
+  WeatherConnection:
+    :git: https://github.com/rekhau/WeatherConnection
+    :tag: 1.0.0
+
+SPEC CHECKSUMS:
+  WeatherConnection: 5980ea005fa576fcd2fce1964fffc62d8b0c07b9
+
+PODFILE CHECKSUM: f6c628d429545cc5f1840bbaf2d25e56b903355c
+
+COCOAPODS: 1.2.1

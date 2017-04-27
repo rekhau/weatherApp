@@ -1,0 +1,6 @@
+framework module WeatherConnection {
+  umbrella header "WeatherConnection-umbrella.h"
+
+  export *
+  module * { export * }
+}

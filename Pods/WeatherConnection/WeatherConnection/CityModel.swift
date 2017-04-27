@@ -8,13 +8,13 @@
 
 import UIKit
 
-struct CityModel {
+public struct CityModel {
     
-    var cityName:String?
-    var minTemp:String?
-    var maxTemp:String?
-    var currentTemp:String?
-    var imageName:String?
+    public private(set) var cityName:String?
+    public private(set) var minTemp:String?
+    public private(set) var maxTemp:String?
+    public private(set) var currentTemp:String?
+    public private(set) var imageName:String?
     
     init(city:String,min:String,max:String,current:String,image:String) {
         cityName = city
